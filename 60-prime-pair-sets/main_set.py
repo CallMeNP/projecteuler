@@ -164,8 +164,8 @@ for i in range(7, 10000, 2):
     if p.is_prime(i):
         primeList.append(i)
 
-print len(primeList)
-print primeList
+print(len(primeList))
+print(primeList)
 
 
 def find2(prime_list, p):
@@ -203,15 +203,15 @@ def find3(combin_2_list, combin_2_set, prime_list):
 
 
 combin_2_list = find2(primeList, p)
-print len(combin_2_list)
+print(len(combin_2_list))
 combin_3_list = find3(combin_2_list, combin_2_list, primeList)
-print len(combin_3_list)
+print(len(combin_3_list))
 combin_4_list = find3(combin_3_list, combin_2_list, primeList)
-print len(combin_4_list)
+print(len(combin_4_list))
 combin_4_list.sort()
-print combin_4_list
+print(combin_4_list)
 combin_5_list = find3(combin_4_list, combin_2_list, primeList)
-print len(combin_5_list)
+print(len(combin_5_list))
 combin_5_list.sort()
-print combin_5_list
-print sum(combin_5_list[0])
+print(combin_5_list)
+print(sum(combin_5_list[0]))
